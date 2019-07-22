@@ -1,7 +1,14 @@
 var slider = document.getElementById('slider'),
-    sliderItems = document.getElementById('items'),
-    prev = document.getElementById('prev'),
-    next = document.getElementById('next');
+    sliderItems = document.getElementById('items');
+
+    var leftButtonSide = document.querySelector(".container button .left-button-side");
+    var rightButtonSide = document.querySelector(".container button .right-button-side");
+    var button = document.querySelector(".container button");
+    
+    prev = leftButtonSide
+    next = rightButtonSide
+    // prev = document.getElementById('prev'),
+    // next = document.getElementById('next');
 
 slide(slider, sliderItems, prev, next);
 

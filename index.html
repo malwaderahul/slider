@@ -6,6 +6,43 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 
+
+<style>
+.container{
+  /* position: relative; */
+}
+
+.container button{
+  width: 10vw;
+  height: 5vw;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(200, 100, 50, 0.2);
+  position: absolute;
+  left: 45vw;
+  bottom: 6vw;
+  display: flex;
+}
+
+.container button span{
+  display: inline-block;
+  height: 5vw;
+  width: 5vw;
+}
+
+.container button .left-button-side{
+  /* background: red; */
+  border-top-left-radius: 100% 50%;
+  border-bottom-left-radius: 100% 50%;
+}
+
+.container button .right-button-side{
+  /* background: blue; */
+  border-top-right-radius: 100% 50%;
+  border-bottom-right-radius: 100% 50%;
+}
+
+</style>
 <body>
   <div id="slider" class="slider">
   <div class="wrapper">
@@ -17,9 +54,15 @@
       <span class="slide">Slide 5</span>
     </div>
   </div>
-  <a id="prev" class="control prev"></a>
-  <a id="next" class="control next"></a>
-</div>
+  <!-- <a id="prev" class="control prev"></a>
+  <a id="next" class="control next"></a> -->
+  </div>
+  <div class="container">
+    <button type="button" name="button">
+      <span class="left-button-side" id="left-side"></span>
+      <span class="right-button-side" id="right-side"></span>
+    </button>
+  </div>
 <script  src="js/index.js"></script>
 </body>
 </html>
